@@ -1,0 +1,33 @@
+class Product:
+    def __init__(self, product_id, name, category, unit_cost, selling_price, lead_time):
+        self.product_id = product_id
+        # ... other attributes
+
+class Warehouse:
+    def __init__(self, warehouse_id, location, capacity):
+        self.warehouse_id = warehouse_id
+        # ... other attributes
+
+class Inventory:
+    def __init__(self, product_id, warehouse_id, quantity_on_hand, reorder_point, safety_stock):
+        self.product_id = product_id
+        # ... other attributes
+
+# Example usage (you'll need to populate with actual data)
+products = [
+    Product(1, "T-shirt", "Apparel", 10, 25, 7),
+    # ... more products
+]
+
+warehouses = [
+    Warehouse(1, "New York", 10000),
+    # ... more warehouses
+]
+
+inventory_levels = [
+    Inventory(1, 1, 500, 200, 50),
+    # ... current inventory levels for each product in each warehouse
+]
+
+# ... (You'll need to implement functions for demand forecasting, 
+#     inventory optimization strategies, etc.)
